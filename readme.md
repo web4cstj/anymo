@@ -55,6 +55,11 @@ La table de données
 |age         |real          |                 |
 |couleur     |text          |                 |
 |description |text          |nullable         |
+|image       |text          |nullable. URL absolue vers une image d'animal|
+
+Les données
+-----------
+Puisque le site comporte une fonction "create", vous n'avez pas à ajouter des données lors de l'installation de la base de données. Vous n'avez donc pas à créer de seeder ni de faker.
 
 Remise
 ------
