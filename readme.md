@@ -1,51 +1,61 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+Les devoirs Anymo
+=================
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Le refuge pour animaux abandonnés Anymo veur mettre en ligne les animaux qu'ils ont à faire adopter. 
+![Anymo](public/images/logo_anymo.svg)
+On vous demande de faire les pages d'administration du site web.
 
-## About Laravel
+Ce projet est un amalgame de 2 devoirs simples : L'interface (5%) et la mécanique (5%)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+Préparation
+-----------
+1. Télécharger ou cloner le dépôt du projet
+1. Compléter l'installation avec :
+   1. La commande `composer update`
+   2. L'ajout du `.env`
+   3. La commande `php artisan key:generate`
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Visuel (l'interface)
+--------------------
+Vous devez faire une interface simple, agréable et fonctionnelle de votre cru.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+Le site doit nécessairement utiliser une page maîtresse dans laquelle on doit inclure minimalement les fichiers `entete`, `menu` et `pied` afin de bien normaliser le code.
 
-## Learning Laravel
+Vous devez inclure le logo de l'organisme qui se trouve dans le dossier `public/images`. Comme il s'agit d'un SVG, vous pouvez facilement ajuster les couleurs en modifiant le fichier. De plus, si vous voulez utiliser la fonte du logo (optionnel) celle-ci se trouve également dans le dossier `public/images`
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+Fonctionnalités (la mécanique)
+------------------------------
+Dans votre site, l'usager doit pouvoir :
+- faire afficher la liste des animaux (seulement le nom et l'espèce)
+- faire afficher la fiche complète d'un animal choisi
+- ajouter un animal
+- modifier un animal existant
+- naviguer aisément d'une fonctionnalité à l'autre
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Votre site n'a pas besoin de :
+- premettre de faire une recherche
+- trier les animaux
+- permettre de supprimer un animal
 
-## Laravel Sponsors
+Les routes
+----------
+Utiliser le pattern d'adressage vu dans les exemples de "Monde Pokémons" avec la différence que les pages se trouvent dans un "dossier" `admin`. Par exemple, la fiche de fido est accessible à l'adressse `http://localhost/admin/animal/123`
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+La table de données
+-------------------
+|Nom du champ|Type de donnée|Autres détails   |
+|------------|--------------|-----------------|
+|id          |Auto-increment|                 |
+|nom         |text          |                 |
+|espece      |text          |                 |
+|race        |text          |                 |
+|sexe        |integer       |0=femelle; 1=mâle|
+|age         |real          |                 |
+|couleur     |text          |                 |
+|description |text          |nullable         |
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Remise
+------
+- Compte pour 10% de la note finale
+- Durée une semaine. À remettre le lundi 12 avril avant minuit.
+- Remettre dans le projet `anymo` sur https://remise.cstj.qc.ca
