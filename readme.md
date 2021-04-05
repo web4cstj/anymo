@@ -2,7 +2,9 @@ Les devoirs Anymo
 =================
 
 Le refuge pour animaux abandonnés Anymo veur mettre en ligne les animaux qu'ils ont à faire adopter. 
+
 ![Anymo](public/images/logo_anymo.svg)
+
 On vous demande de faire les pages d'administration du site web.
 
 Ce projet est un amalgame de 2 devoirs simples : L'interface (5%) et la mécanique (5%)
@@ -21,7 +23,7 @@ Vous devez faire une interface simple, agréable et fonctionnelle de votre cru.
 
 Le site doit nécessairement utiliser une page maîtresse dans laquelle on doit inclure minimalement les fichiers `entete`, `menu` et `pied` afin de bien normaliser le code.
 
-Vous devez inclure le logo de l'organisme qui se trouve dans le dossier `public/images`. Comme il s'agit d'un SVG, vous pouvez facilement ajuster les couleurs en modifiant le fichier. De plus, si vous voulez utiliser la fonte du logo (optionnel) celle-ci se trouve également dans le dossier `public/images`
+Vous devez inclure le logo de l'organisme qui se trouve dans le dossier `public/images`. Comme il s'agit d'un SVG, vous pouvez facilement ajuster les couleurs en modifiant le code du fichier directement dans VSCode. De plus, si vous voulez utiliser la fonte du logo (optionnel) celle-ci se trouve également dans le dossier `public/images`
 
 Fonctionnalités (la mécanique)
 ------------------------------
@@ -39,7 +41,7 @@ Votre site n'a pas besoin de :
 
 Les routes
 ----------
-Utiliser le pattern d'adressage vu dans les exemples de "Monde Pokémons" avec la différence que les pages se trouvent dans un "dossier" `admin`. Par exemple, la fiche de fido est accessible à l'adressse `http://localhost/admin/animal/123`
+Utiliser le pattern d'adressage vu dans les exemples de "Monde Pokémons" avec la différence que les pages se trouvent dans un "dossier" `admin`. Par exemple, la fiche de Fido est accessible à l'adressse `http://localhost/admin/animal/123`
 
 La table de données
 -------------------
